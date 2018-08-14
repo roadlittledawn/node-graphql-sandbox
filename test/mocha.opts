@@ -1,4 +1,5 @@
 --async-only
 --recursive
 --timeout 2000
---require ./test/bootstrap.js
+--delay
+test/bootstrap.js

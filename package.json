@@ -21,7 +21,7 @@
     "prelint": ". conf/test.sh && scripts/install.sh",
     "lint": ". conf/test.sh && docker-compose run --entrypoint yarn app run lint:run",
     "postlint": ". conf/test.sh && scripts/down.sh",
-    "test:run": "yarn lint:run && mocha --reporter spec",
+    "test:run": "yarn lint:run && mocha 'test/**/*.spec.js' --reporter spec",
     "lint:run": "eslint src",
     "coverage:run": "nyc yarn test:run"
   },
