@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node_modules/.bin/gulp",
+    "start": "scripts/start.sh",
+    "stop": "scripts/stop.sh",
     "test": "yarn lint && node_modules/.bin/mocha --reporter spec",
     "lint": "node_modules/.bin/eslint src",
     "coverage": "./node_modules/.bin/nyc yarn test"
