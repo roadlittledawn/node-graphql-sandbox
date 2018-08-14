@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "terminal": ". conf/dev.sh && scripts/terminal.sh",
     "prestart": ". conf/dev.sh && scripts/install.sh",
     "start": ". conf/dev.sh && scripts/up.sh",
     "stop": ". conf/dev.sh && scripts/down.sh",
