@@ -6,5 +6,10 @@
   "repository": "https://github.com/zarathustra323/node-graphql-sandbox",
   "author": "Jacob Bare <jacob@limit0.io>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
 }
