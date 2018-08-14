@@ -26,7 +26,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('lint', function (cb) {
-  const lint = spawn('./node_modules/.bin/eslint', ['src/**/*.js'], { stdio: 'inherit' });
+  const lint = spawn('./node_modules/.bin/eslint', ['--cache', 'src'], { stdio: 'inherit' });
   lint.on('close', function (code) {
     if (code === 8) {
       cb(code);

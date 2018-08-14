@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node_modules/.bin/gulp",
     "test": "yarn lint && node_modules/.bin/mocha --reporter spec",
-    "lint": "node_modules/.bin/eslint \"src/**/*.js\""
+    "lint": "node_modules/.bin/eslint src"
   },
   "dependencies": {
     "apollo-server-express": "^2.0.0",
