@@ -8,11 +8,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "scripts/start.sh",
-    "stop": "scripts/stop.sh",
-    "test": "yarn lint && node_modules/.bin/mocha --reporter spec",
-    "lint": "node_modules/.bin/eslint src",
-    "coverage": "./node_modules/.bin/nyc yarn test"
+    "prestart": ". conf/dev.sh && scripts/install.sh",
+    "start": ". conf/dev.sh && scripts/up.sh",
+    "stop": ". conf/dev.sh && scripts/down.sh",
+    "test:run": "yarn lint:run && mocha --reporter spec",
+    "lint:run": "eslint src",
+    "coverage:run": "nyc yarn test"
   },
   "dependencies": {
     "apollo-server-express": "^2.0.0",
