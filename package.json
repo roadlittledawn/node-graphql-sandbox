@@ -11,6 +11,9 @@
     "prestart": ". conf/dev.sh && scripts/install.sh",
     "start": ". conf/dev.sh && scripts/up.sh",
     "stop": ". conf/dev.sh && scripts/down.sh",
+    "pretest": "yarn posttest && . conf/test.sh && scripts/install.sh",
+    "test": ". conf/test.sh && docker-compose run app",
+    "posttest": ". conf/test.sh && scripts/down.sh && scripts/prune.sh",
     "test:run": "yarn lint:run && mocha --reporter spec",
     "lint:run": "eslint src",
     "coverage:run": "nyc yarn test"
