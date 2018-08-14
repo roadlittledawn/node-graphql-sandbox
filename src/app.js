@@ -1,9 +1,9 @@
 const express = require('express');
+const routes = require('./routes');
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.json({ hello: 'world' });
-});
+// Load routes.
+routes(app);
 
 module.exports = app;
