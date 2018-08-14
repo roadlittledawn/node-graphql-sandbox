@@ -1,9 +1,9 @@
 const index = require('../src/index');
 
-describe('index', function() {
-  it('should load.', async function() {
+describe('index', () => {
+  it('should load.', async () => {
   });
-  after(function() {
+  after(() => {
     // Close the server.
     index.close();
   });
