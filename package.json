@@ -14,9 +14,12 @@
     "pretest": "yarn posttest && . conf/test.sh && scripts/install.sh",
     "test": ". conf/test.sh && docker-compose run app",
     "posttest": ". conf/test.sh && scripts/down.sh && scripts/prune.sh",
+    "precoverage": "yarn postcoverage && . conf/test.sh && scripts/install.sh",
+    "coverage": ". conf/test.sh && docker-compose run --entrypoint yarn app run coverage:run",
+    "postcoverage": ". conf/test.sh && scripts/down.sh && scripts/prune.sh",
     "test:run": "yarn lint:run && mocha --reporter spec",
     "lint:run": "eslint src",
-    "coverage:run": "nyc yarn test"
+    "coverage:run": "nyc yarn test:run"
   },
   "dependencies": {
     "apollo-server-express": "^2.0.0",
