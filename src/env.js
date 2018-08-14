@@ -6,6 +6,7 @@ const {
   makeValidator,
 } = require('envalid');
 
+/* istanbul ignore next */
 const mongodsn = makeValidator((v) => {
   const opts = { protocols: ['mongodb'], require_tld: false, require_protocol: true };
   if (isURL(v, opts)) return v;

@@ -9,6 +9,7 @@ const server = app.listen(PORT, () => {
   process.stdout.write(`Express app '${pkg.name} v${pkg.version}' listening on port ${PORT}\n`);
 });
 
+/* istanbul ignore next */
 function graceful(options) {
   const { cleanup, exit } = options;
   if (cleanup) {
