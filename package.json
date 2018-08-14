@@ -1,0 +1,10 @@
+{
+  "name": "node-graphql-sandbox",
+  "version": "0.1.0",
+  "description": "A sandbox for building a Node GraphQL server.",
+  "main": "src/index.js",
+  "repository": "https://github.com/zarathustra323/node-graphql-sandbox",
+  "author": "Jacob Bare <jacob@limit0.io>",
+  "license": "MIT",
+  "private": true
+}
