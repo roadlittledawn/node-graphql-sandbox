@@ -13,6 +13,7 @@
     "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
+    "envalid": "^4.1.4",
     "express": "^4.16.3"
   }
 }
